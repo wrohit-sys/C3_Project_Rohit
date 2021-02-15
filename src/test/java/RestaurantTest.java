@@ -45,8 +45,9 @@ class RestaurantTest {
     }
     @Test
     public void calculateOrderTotal_should_return_400_after_adding_the_350_and_50(){
+        addRestaurantDetails();
         Integer orderTotal = restaurant.calculateOrderTotal(350,50);
-        assertEquals(400,restaurant.calculateOrderTotal());
+        assertEquals(400,orderTotal);
     }
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<OPEN/CLOSED>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
